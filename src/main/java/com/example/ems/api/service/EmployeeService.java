@@ -9,6 +9,7 @@ public interface EmployeeService {
     EmployeeDto createEmployee(EmployeeDto employeeDto);
     Page<EmployeeDto> getAllEmployees(Pageable pageable);
     EmployeeDto getEmployeeById(Long id);
-    //EmployeeDto updateEmployee(Long id, EmployeeDto employeeDto);
+    EmployeeDto updateEmployee(Long id, EmployeeDto employeeDto);
     void deleteEmployee(Long id);
+    void deleteAllEmployees();
 }
